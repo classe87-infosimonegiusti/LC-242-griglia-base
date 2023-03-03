@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3741af;
+}
+
+main {
+    padding-top: 50px;
+}
+
+#grid {
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square-number {
+    display: none;
+}
+
+.square.clicked .square-number {
+    display: block;
+}
+
+.square {
+    width: calc(100% / 8);
+    height: calc(100% / 8);
+    border: solid 2px #7e89ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square.clicked.square-even {
+    background-color: lightcoral;
+}
+
+.square.clicked.square-odd {
+    background-color: aquamarine;
+}
